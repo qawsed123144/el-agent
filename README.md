@@ -126,3 +126,5 @@ The agent:
 See `instruction/instruction.md` for full behavior specification.
 
 ---
+## Demo video
+https://youtu.be/sEhDWdLXcjg
