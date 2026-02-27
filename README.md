@@ -7,6 +7,7 @@ It ingests earthquake data from the USGS FDSN API, stores it in a time-series in
 ---
 
 ## Repository Structure
+```text
 elastic-earthquake-agent/
 │
 ├── ingest/
@@ -20,6 +21,7 @@ elastic-earthquake-agent/
 │
 ├── .gitignore
 └── README.md
+```
 
 ## Data Scope Notice
 
@@ -28,6 +30,7 @@ This project currently uses predefined date ranges for ingestion.
 It is not continuously streaming live data.
 
 The ingestion script uses the following fixed ranges:
+```text
 DATE_RANGES = [
 ("2024-01-01", "2024-06-30"),
 ("2024-07-01", "2024-12-31"),
@@ -35,6 +38,7 @@ DATE_RANGES = [
 ("2025-07-01", "2025-12-31"),
 ("2026-01-01", "2026-02-28"),
 ]
+```
 
 
 These ranges are intentionally limited for demonstration and reproducibility.
