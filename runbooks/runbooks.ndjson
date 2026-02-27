@@ -1,0 +1,30 @@
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: 24h Earthquake Count Spike", "tags": ["earthquake","count","spike"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: 24h earthquake count significantly exceeds baseline.\nChecks: Compute recent_count and 7-day baseline_avg.\nActions: Calculate ratio and check clustering.\nReport: recent_count, baseline_avg, ratio." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: High Magnitude Event (>=6.0)", "tags": ["earthquake","magnitude","major"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: At least one event magnitude >=6.0.\nChecks: Filter magnitude >=6.0.\nActions: Monitor aftershocks and region.\nReport: magnitude, depth_km, place." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Multiple M5+ Events", "tags": ["earthquake","magnitude","cluster"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: 3 or more events magnitude >=5.0 in 24h.\nChecks: Count magnitude >=5.0.\nActions: Evaluate escalation risk.\nReport: count_M5, max_magnitude." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Shallow Earthquake Increase", "tags": ["earthquake","depth","shallow"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Increased shallow (<20km) proportion.\nChecks: Compare shallow_ratio recent vs baseline.\nActions: Assess surface impact risk.\nReport: shallow_ratio_recent, shallow_ratio_baseline." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Regional Seismic Cluster", "tags": ["earthquake","region","cluster"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Majority of events in single region.\nChecks: Group by place.\nActions: Monitor dominant region.\nReport: cluster_region, event_count." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Offshore Event Surge", "tags": ["earthquake","offshore","marine"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Spike in offshore events.\nChecks: Filter marine coordinates.\nActions: Assess tsunami potential.\nReport: offshore_event_count." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Magnitude Distribution Shift", "tags": ["earthquake","magnitude","distribution"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Increase in average magnitude.\nChecks: Compute avg_mag recent vs baseline.\nActions: Assess escalation pattern.\nReport: avg_mag_recent, avg_mag_baseline." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Historical Major Events Review", "tags": ["earthquake","historical","impact"], "use_case": "historical_analysis", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Request for strongest earthquakes in period.\nChecks: Sort by magnitude DESC.\nActions: Analyze depth and region.\nReport: top_events, max_magnitude." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Baseline Comparison Framework", "tags": ["earthquake","baseline","comparison"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Date vs 7-day comparison requested.\nChecks: Compute target_count and baseline_avg.\nActions: Calculate ratio.\nReport: target_count, baseline_avg, ratio." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Time-of-Day Pattern", "tags": ["earthquake","temporal","pattern"], "use_case": "analysis", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Unusual hourly distribution.\nChecks: Bucket by hour.\nActions: Validate reporting consistency.\nReport: hour_distribution." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Location Drift Detection", "tags": ["earthquake","location","drift"], "use_case": "analysis", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Gradual epicenter shift.\nChecks: Sort by timestamp and compare coordinates.\nActions: Evaluate fault propagation.\nReport: drift_direction." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Sensor Artifact Detection", "tags": ["earthquake","data","artifact"], "use_case": "data_quality", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Burst with identical timestamps.\nChecks: Inspect timestamp clustering.\nActions: Verify ingestion pipeline.\nReport: suspicious_pattern." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Non-Tectonic Event Check", "tags": ["earthquake","explosion","mining"], "use_case": "analysis", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Isolated moderate event without aftershocks.\nChecks: Verify follow-up events.\nActions: Cross-reference industrial activity.\nReport: suspected_non_tectonic." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Aftershock Sequence Monitoring", "tags": ["earthquake","aftershock","sequence"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Series of decreasing magnitude events.\nChecks: Sort by magnitude over time.\nActions: Monitor decay pattern.\nReport: aftershock_trend." }
+{ "index": { "_index": "runbooks" } }
+{ "title": "Runbook: Elevated Regional Risk Assessment", "tags": ["earthquake","risk","regional"], "use_case": "earthquake_anomaly", "updated_at": "2026-02-20T00:00:00+08:00", "content": "Symptoms: Large event or abnormal cluster.\nChecks: Validate magnitude, depth, clustering.\nActions: Assess escalation probability.\nReport: severity_level, risk_outlook." }
